@@ -1,0 +1,17 @@
+{
+  "name": "metronic-dashboard",
+  "version": "1.0.0",
+  "description": "Modern Persian Dashboard with Metronic Components",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o",
+    "start": "npx http-server . -p 3000",
+    "build": "echo 'Build completed'"
+  },
+  "keywords": ["dashboard", "metronic", "persian", "rtl"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
