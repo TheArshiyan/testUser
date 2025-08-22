@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد مدرن</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-right">
+                <div class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span>داشبورد</span>
+                </div>
+                <div class="nav-items">
+                    <button class="nav-item">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <button class="nav-item">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-left">
+                <div class="user-profile">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop&crop=face" alt="کاربر" class="user-avatar">
+                    <span class="user-name">کاربر</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alert Banner (Improved) -->
+    <div class="alert-banner">
+        <div class="alert-content">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>ایمیل شما احراز نشده است برای احراز</span>
+            <button class="alert-action">کلیک کنید</button>
+        </div>
+        <button class="alert-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>منوی اصلی</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-group">
+                    <div class="nav-group-title">مدیریت</div>
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>داشبورد</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>اشتراک ها</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-credit-card"></i>
+                        <span>پرداخت ها</span>
+                    </a>
+                </div>
+                <div class="nav-group">
+                    <div class="nav-group-title">تنظیمات</div>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-percent"></i>
+                        <span>کدهای تخفیف</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>آموزش ها</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-download"></i>
+                        <span>دانلود نرم افزار</span>
+                    </a>
+                </div>
+                <div class="nav-group">
+                    <div class="nav-group-title">پشتیبانی</div>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-headset"></i>
+                        <span>پشتیبانی</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-history"></i>
+                        <span>سفارش های گذشته</span>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-header">
+                <h1>اشتراک ها</h1>
+                <p>مدیریت و مشاهده اشتراک های فعال</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>میزان مصرف</h3>
+                        <div class="stat-value">0%</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+2.5%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>تاریخ انقضا</h3>
+                        <div class="stat-value">۱۴۰۵/۰۶/۰۹</div>
+                        <div class="stat-change neutral">
+                            <span>۱۵ روز باقی مانده</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>نام اشتراک</h3>
+                        <div class="stat-value">پریمیم</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-check-circle"></i>
+                            <span>فعال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>جزئیات</h3>
+                        <div class="stat-value">مشاهده</div>
+                        <div class="stat-change">
+                            <button class="view-details-btn">
+                                <i class="fas fa-eye"></i>
+                                <span>نمایش</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Chart -->
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>نمودار مصرف ماهانه</h3>
+                    <div class="chart-controls">
+                        <button class="chart-btn active">ماهانه</button>
+                        <button class="chart-btn">هفتگی</button>
+                        <button class="chart-btn">روزانه</button>
+                    </div>
+                </div>
+                <div class="chart-content">
+                    <div class="usage-chart">
+                        <div class="chart-placeholder">
+                            <i class="fas fa-chart-area"></i>
+                            <p>نمودار مصرف در اینجا نمایش داده می‌شود</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="activity-container">
+                <div class="activity-header">
+                    <h3>فعالیت های اخیر</h3>
+                    <button class="view-all-btn">مشاهده همه</button>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon success">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>اشتراک تمدید شد</h4>
+                            <p>اشتراک شما با موفقیت تمدید گردید</p>
+                            <span class="activity-time">۲ ساعت پیش</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon info">
+                            <i class="fas fa-info"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>به‌روزرسانی سیستم</h4>
+                            <p>سیستم با موفقیت به‌روزرسانی شد</p>
+                            <span class="activity-time">۱ روز پیش</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon warning">
+                            <i class="fas fa-exclamation"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>هشدار مصرف</h4>
+                            <p>مصرف شما به ۸۰٪ رسیده است</p>
+                            <span class="activity-time">۳ روز پیش</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
