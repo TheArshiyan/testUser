@@ -1,0 +1,549 @@
+/* Metronic Custom Styles for Persian Dashboard */
+
+/* RTL Support and Base Styles */
+:root {
+    --kt-primary: #009ef7;
+    --kt-primary-light: #f1faff;
+    --kt-secondary: #e4e6ea;
+    --kt-success: #50cd89;
+    --kt-success-light: #e8fff3;
+    --kt-info: #7239ea;
+    --kt-info-light: #f8f5ff;
+    --kt-warning: #ffc700;
+    --kt-warning-light: #fff8dd;
+    --kt-danger: #f1416c;
+    --kt-danger-light: #fff5f8;
+    --kt-dark: #181c32;
+    --kt-light: #f5f8fa;
+    --kt-gray-100: #f9f9f9;
+    --kt-gray-200: #f4f4f4;
+    --kt-gray-300: #e1e3ea;
+    --kt-gray-400: #b5b5c3;
+    --kt-gray-500: #a1a5b7;
+    --kt-gray-600: #7e8299;
+    --kt-gray-700: #5e6278;
+    --kt-gray-800: #3f4254;
+    --kt-gray-900: #181c32;
+}
+
+body {
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--kt-light);
+    color: var(--kt-gray-700);
+    line-height: 1.6;
+}
+
+/* KT App Layout */
+.kt-app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* KT App Header */
+.kt-app-header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--kt-gray-200);
+    box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+.kt-app-header-container {
+    height: 70px;
+    padding: 0 2rem;
+}
+
+.kt-app-header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.kt-app-header-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--kt-gray-800);
+}
+
+.kt-app-header-logo-text {
+    margin-right: 0.5rem;
+}
+
+.kt-app-header-navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Custom Button Styles */
+.btn-custom {
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+.btn-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    border: none;
+    background: transparent;
+    color: var(--kt-gray-500);
+    transition: all 0.15s ease;
+}
+
+.btn-icon:hover {
+    background: var(--kt-gray-100);
+    color: var(--kt-primary);
+}
+
+.btn-active-light:hover {
+    background: var(--kt-primary-light);
+    color: var(--kt-primary);
+}
+
+/* Badge Styles */
+.badge-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-danger {
+    background: var(--kt-danger);
+    color: white;
+}
+
+/* Symbol Styles */
+.symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.symbol-35px {
+    width: 35px;
+    height: 35px;
+}
+
+.symbol-40px {
+    width: 40px;
+    height: 40px;
+}
+
+.symbol-45px {
+    width: 45px;
+    height: 45px;
+}
+
+.symbol-50px {
+    width: 50px;
+    height: 50px;
+}
+
+.symbol img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.symbol-label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* KT App Sidebar */
+.kt-app-sidebar {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 280px;
+    height: calc(100vh - 70px);
+    background: #ffffff;
+    border-left: 1px solid var(--kt-gray-200);
+    box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.15);
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.kt-app-sidebar-body {
+    padding: 2rem 1.5rem;
+}
+
+/* KT Menu Styles */
+.kt-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.kt-menu-item {
+    margin-bottom: 0.25rem;
+}
+
+.kt-menu-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: var(--kt-gray-600);
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.kt-menu-link:hover {
+    background: var(--kt-gray-100);
+    color: var(--kt-primary);
+    text-decoration: none;
+}
+
+.kt-menu-link.active {
+    background: var(--kt-primary);
+    color: white;
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 158, 247, 0.3);
+}
+
+.kt-menu-icon {
+    width: 24px;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kt-menu-title {
+    flex: 1;
+}
+
+.kt-menu-heading {
+    color: var(--kt-gray-400);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+/* KT App Main */
+.kt-app-main {
+    margin-right: 280px;
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+}
+
+.kt-app-content {
+    padding: 2rem;
+}
+
+.kt-app-content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* KT Alert Styles */
+.kt-alert {
+    border-radius: 0.75rem;
+    border: none;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.bg-light-danger {
+    background: var(--kt-danger-light);
+    color: var(--kt-danger);
+}
+
+/* KT Page Title */
+.kt-page-title-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--kt-gray-800);
+    margin-bottom: 0.5rem;
+}
+
+.kt-page-title-description {
+    color: var(--kt-gray-500);
+    font-size: 0.875rem;
+}
+
+/* KT Card Styles */
+.kt-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
+    border: 1px solid var(--kt-gray-200);
+    transition: all 0.15s ease;
+}
+
+.kt-card-hover-elevate-up:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+.kt-card-header {
+    padding: 1.5rem 2rem 0;
+    border-bottom: 1px solid var(--kt-gray-200);
+    margin-bottom: 1.5rem;
+}
+
+.kt-card-header.border-0 {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.kt-card-body {
+    padding: 2rem;
+}
+
+.kt-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--kt-gray-800);
+    margin: 0;
+}
+
+.kt-card-label {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--kt-gray-800);
+}
+
+.kt-card-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Background Color Utilities */
+.bg-light-primary {
+    background: var(--kt-primary-light);
+}
+
+.bg-light-success {
+    background: var(--kt-success-light);
+}
+
+.bg-light-info {
+    background: var(--kt-info-light);
+}
+
+.bg-light-warning {
+    background: var(--kt-warning-light);
+}
+
+.bg-light-danger {
+    background: var(--kt-danger-light);
+}
+
+/* Text Color Utilities */
+.text-primary {
+    color: var(--kt-primary) !important;
+}
+
+.text-success {
+    color: var(--kt-success) !important;
+}
+
+.text-info {
+    color: var(--kt-info) !important;
+}
+
+.text-warning {
+    color: var(--kt-warning) !important;
+}
+
+.text-danger {
+    color: var(--kt-danger) !important;
+}
+
+.text-dark {
+    color: var(--kt-gray-800) !important;
+}
+
+.text-muted {
+    color: var(--kt-gray-500) !important;
+}
+
+.text-gray-800 {
+    color: var(--kt-gray-800) !important;
+}
+
+/* Button Variants */
+.btn-light-primary {
+    background: var(--kt-primary-light);
+    color: var(--kt-primary);
+    border: 1px solid transparent;
+}
+
+.btn-light-primary:hover {
+    background: var(--kt-primary);
+    color: white;
+}
+
+.btn-light-success {
+    background: var(--kt-success-light);
+    color: var(--kt-success);
+    border: 1px solid transparent;
+}
+
+.btn-light-info {
+    background: var(--kt-info-light);
+    color: var(--kt-info);
+    border: 1px solid transparent;
+}
+
+.btn-light-warning {
+    background: var(--kt-warning-light);
+    color: var(--kt-warning);
+    border: 1px solid transparent;
+}
+
+.btn-light {
+    background: var(--kt-gray-100);
+    color: var(--kt-gray-600);
+    border: 1px solid transparent;
+}
+
+.btn-light:hover {
+    background: var(--kt-gray-200);
+    color: var(--kt-gray-700);
+}
+
+/* Badge Variants */
+.badge-light-success {
+    background: var(--kt-success-light);
+    color: var(--kt-success);
+}
+
+.badge-light-primary {
+    background: var(--kt-primary-light);
+    color: var(--kt-primary);
+}
+
+.badge-light-warning {
+    background: var(--kt-warning-light);
+    color: var(--kt-warning);
+}
+
+/* Progress Bar */
+.progress {
+    background: var(--kt-gray-200);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: var(--kt-primary);
+    transition: width 0.6s ease;
+}
+
+.bg-primary {
+    background: var(--kt-primary) !important;
+}
+
+/* Shadow Utilities */
+.kt-shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Mixed Widget Styles */
+.kt-mixed-widget-14-chart {
+    background: var(--kt-gray-100);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1199.98px) {
+    .kt-app-sidebar {
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .kt-app-main {
+        margin-right: 0;
+    }
+    
+    .kt-app-sidebar.show {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .kt-app-header-container {
+        padding: 0 1rem;
+    }
+    
+    .kt-app-content {
+        padding: 1rem;
+    }
+    
+    .kt-card-body {
+        padding: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.kt-card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Focus States for Accessibility */
+.btn:focus,
+.kt-menu-link:focus {
+    outline: 2px solid var(--kt-primary);
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .kt-card {
+        border: 2px solid var(--kt-gray-400);
+    }
+    
+    .kt-menu-link {
+        border: 1px solid transparent;
+    }
+    
+    .kt-menu-link:hover,
+    .kt-menu-link:focus {
+        border-color: var(--kt-primary);
+    }
+}
